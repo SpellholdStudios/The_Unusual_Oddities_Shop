@@ -1,0 +1,93 @@
+/* ================================================================================================================================================== *
+ * LIST of FUNCTIONS :                                                                                                                                *
+ * -------------------                                                                                                                                *
+ *  - FUNCTION GW_UPDATE_ITM_DESCRIPTION_TO_EE		: MODIFIES item descriptions to fit EE description format.                         => line #   9  *
+ *  - FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS			: WRITES item descriptions in ITM files according to the game (classical or EE).   => line #  49  *
+ * ================================================================================================================================================== */
+
+/* ========================================================================================================== *
+ * FUNCTION GW_UPDATE_ITM_DESCRIPTION_TO_EE: AJUSTE la DESCRIPTION des OBJETS au format Enhanced Edition.     *
+ * ---------------------------------------------------------------------------------------------------------- *
+ * Reads variable GW_desc_to_update (@nn or #nnn) in .tra file, alters it to fit EE description format,       *
+ * then saves it as variable GW_desc_updated.                                                                 *
+ * ========================================================================================================== *
+ * FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS: ÉCRIT les DESCRIPTIONS des OBJETS au format Enhanced Edition.       *
+ * ---------------------------------------------------------------------------------------------------------- *
+ * Reads variables GW_desc_to_update and GW_undesc_to_update (@nnn or #nnn) in .tra file, alters them to fit  *
+ * EE description format if needed, then updates .ITM file.                                                   *
+ * ========================================================================================================== */
+
+DEFINE_PATCH_FUNCTION ~GW_UPDATE_ITM_DESCRIPTION_TO_EE~ 
+	STR_VAR GW_desc_to_update = ~~	// reference in format @123 or #123
+	RET		GW_desc_updated			// returns modified text
+BEGIN
+
+	INNER_ACTION BEGIN
+		ACTION_IF (~%GW_desc_to_update%~ STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ == 0) BEGIN
+			<<<<<<<< .../inlined/GW_%GW_desc_to_update%.tpp
+OUTER_SPRINT GW_desc_updated 
+>>>>>>>>
+			SILENT
+			COPY - ~.../inlined/GW_%GW_desc_to_update%.tpp~ ~.../inlined/GW_%GW_desc_to_update%.tpp~
+				INSERT_BYTES SOURCE_SIZE (STRING_LENGTH ~%GW_desc_to_update%~)
+				WRITE_ASCIIE SOURCE_SIZE ~%GW_desc_to_update%~
+			VERBOSE
+			INCLUDE ~.../inlined/GW_%GW_desc_to_update%.tpp~
+			OUTER_SPRINT usab @9001		// ~[Uu]niquement[ %tab%]+[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+			OUTER_SPRINT unus @9002		// ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+			OUTER_PATCH_SAVE GW_desc_updated ~%GW_desc_updated%~ BEGIN	// Suppression de toutes les références aux classes et aux kits pouvant ou pas utiliser l'objet.
+				REPLACE_TEXTUALLY ~\(\([%LNL%%MNL%%WNL%][ %TAB%]*\(%usab%\|%unus%\)[ %TAB%]*\)\(\([%LNL%%MNL%%WNL%].*\)*\)?\)~  ~~
+			END
+		END ELSE BEGIN
+			OUTER_SPRINT GW_desc_updated ~none~
+		END
+	END	// of INNER_ACTION
+
+END		// of DEFINE_PATCH_FUNCTION
+
+
+DEFINE_PATCH_FUNCTION ~GW_WRITE_EE_ITM_DESCRIPTIONS~ 
+	STR_VAR GW_desc_to_update	= ~~	// reference in format @123 or #123
+			GW_undesc_to_update = ~~	// reference in format @123 or #123
+BEGIN
+	PATCH_IF (ENGINE_IS ~bgee bg2ee eet~) OR GAME_INCLUDES ~sod~ BEGIN
+		SPRINT GWdesc "none"
+		SPRINT GWundesc "none"
+		PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_desc_to_update%" STR_CMP ~~) BEGIN
+			LPF ~GW_UPDATE_ITM_DESCRIPTION_TO_EE~ STR_VAR GW_desc_to_update = EVAL "%GW_desc_to_update%" RET GWdesc = GW_desc_updated END
+		END ELSE BEGIN
+			SPRINT GWdesc ~none~
+		END
+		PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_undesc_to_update%" STR_CMP ~~) BEGIN
+			LPF ~GW_UPDATE_ITM_DESCRIPTION_TO_EE~ STR_VAR GW_desc_to_update = EVAL "%GW_undesc_to_update%" RET GWundesc = GW_desc_updated END
+		END ELSE BEGIN
+			SPRINT GWundesc ~none~
+		END
+		PATCH_IF ("%GWdesc%" STR_CMP "none")	BEGIN SAY_EVALUATED DESC ~%GWdesc%~ END
+		PATCH_IF ("%GWundesc%" STR_CMP "none")	BEGIN SAY_EVALUATED UNIDENTIFIED_DESC ~%GWundesc%~ END 
+
+	END ELSE BEGIN		// BG2 ou BGT
+		PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_desc_to_update%" STR_CMP ~~) BEGIN
+			INNER_PATCH_SAVE GWdesc ~%GW_desc_to_update%~ BEGIN		// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
+				REPLACE_TEXTUALLY ~^[@#]~  ~~
+			END
+			PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
+				WRITE_LONG 0x54 RESOLVE_STR_REF ((AT %GWdesc%))
+			END ELSE BEGIN											// inutile d'employer PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[#]-?[0-9]+$~ = 0) BEGIN
+				WRITE_LONG 0x54 %GWdesc%
+			END
+		END
+		PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_undesc_to_update%" STR_CMP ~~) BEGIN
+			INNER_PATCH_SAVE GWundesc ~%GW_undesc_to_update%~ BEGIN	// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
+				REPLACE_TEXTUALLY ~^[@#]~  ~~
+			END
+			PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
+				WRITE_LONG 0x50 RESOLVE_STR_REF ((AT %GWundesc%))
+			END ELSE BEGIN
+				WRITE_LONG 0x50 %GWundesc%
+			END
+		END
+
+	END	// of PATCH_IF (ENGINE_IS ~bgee bg2ee eet~) OR GAME_INCLUDES ~sod~
+
+END		// of DEFINE_PATCH_FUNCTION
