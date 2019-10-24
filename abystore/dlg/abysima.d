@@ -1,7 +1,7 @@
 BEGIN ~r#asdemn~
 
 IF ~NumTimesTalkedTo(0)
-    Global("r#AbysimaAR","GLOBALS",0)~ THEN BEGIN Introduction
+    Global("r#AbysimaAR","GLOBAL",0)~ THEN BEGIN Introduction
 SAY @0
 IF ~~ THEN REPLY @1 GOTO Demon
 IF ~~ THEN REPLY @2 GOTO Leave
@@ -27,7 +27,7 @@ END
 IF ~~ THEN BEGIN Leave
 SAY @13 
 IF ~~ THEN DO ~EscapeArea()
-               SetGlobal("r#AbysimaAR","GLOBALS",1)~
+               SetGlobal("r#AbysimaAR","GLOBAL",1)~
 EXIT
 END
 
