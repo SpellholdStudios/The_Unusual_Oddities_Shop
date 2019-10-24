@@ -1,0 +1,123 @@
+// Version 4.0
+BACKUP ~abystore/backup~
+//AUTHOR ~Rastor <rastor@rpgdungeon.net>~
+SUPPORT ~http://www.shsforums.net/topic/57827-the-unusual-oddities-shop-v500-a-mod-from-rastor/~
+
+VERSION ~5.0.0~
+
+README ~abystore/readme/abystore-readme.html~
+
+
+ALWAYS
+
+	/* Converts tra files to UTF-8 */
+	ACTION_DEFINE_ARRAY r#_reload BEGIN abysetup END
+	ACTION_DEFINE_ARRAY r#_noconvert BEGIN END
+		LAF HANDLE_CHARSETS
+		INT_VAR
+		infer_charset = 1
+		STR_VAR
+		tra_path = EVAL ~%MOD_FOLDER%/lang~
+		noconvert_array = r#_noconvert
+		reload_array = r#_reload
+	END
+
+	/* Loads in any shared functions library (general macros and functions) */
+	INCLUDE ~abystore/lib/gw_functions.tpa~	// Loads macros and functions library dealing with tooltip appending and specific EE items descriptions.
+
+END
+
+AUTO_TRA ~abystore/lang/%s~
+
+LANGUAGE ~English~
+		 ~english~
+		 ~abystore/lang/english/abysetup.tra~
+LANGUAGE ~Polish~
+		 ~polish~
+		 ~abystore/lang/polish/abysetup.tra~
+LANGUAGE ~Russian (by AERIE.ru)~
+		 ~russian~
+		 ~abystore/lang/russian/abysetup.tra~
+LANGUAGE ~French~
+		 ~french~
+		 ~abystore/lang/french/abysetup.tra~
+LANGUAGE ~Italian (by Ilot)~
+		 ~italian~
+		 ~abystore/lang/italian/abysetup.tra~
+LANGUAGE ~German~
+		 ~german~
+		 ~abystore/lang/german/abysetup.tra~
+
+
+/* ========================================== *
+ *         The Unusual Oddities Shop          *
+ * ========================================== */
+
+BEGIN @100
+DESIGNATED 0
+REQUIRE_PREDICATE GAME_IS ~soa tob bgt bg2ee eet~ @101
+
+/*DEPRECATED as of v 5.0.0
+ACTION_IF FILE_EXISTS ~override/r#abystore.rpgd~ BEGIN
+	FAIL ~The Unusual Oddities Shop is already installed.~
+END ELSE BEGIN
+	COPY_EXISTING ~sw1h01.itm~ ~override/r#abystore.rpgd~
+END
+*/
+
+// Orc Render
+COPY ~abystore/itm/r#asoswd.itm~ ~override~
+//	SAY NAME1 @1	SAY UNIDENTIFIED_DESC @3
+	SAY NAME2 @2
+ 	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@4" END
+
+// Loren's Chain +5
+COPY ~abystore/itm/r#aspchn.itm~ ~override~
+//	SAY NAME1 @5	SAY UNIDENTIFIED_DESC @7
+	SAY NAME2 @6
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@8" END
+
+// Shield of the Lords +4
+COPY ~abystore/itm/r#asshld.itm~ ~override~
+//	SAY NAME1 @9	SAY UNIDENTIFIED_DESC @11
+	SAY NAME2 @10
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@12" END
+
+// Cloak of the Gods
+COPY ~abystore/itm/r#asgclk.itm~ ~override~
+//	SAY NAME1 @13	SAY UNIDENTIFIED_DESC @15
+	SAY NAME2 @14
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@16" END
+
+// Minor Mage Gauntlets
+COPY ~abystore/itm/r#asmgau.itm~ ~override~
+//	SAY NAME1 @17	SAY UNIDENTIFIED_DESC @19
+	SAY NAME2 @18
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@20" END
+
+// Staff of the Dragon +3
+COPY ~abystore/itm/r#asmstf.itm~ ~override~
+//	SAY NAME1 @21	SAY UNIDENTIFIED_DESC @23
+	SAY NAME2 @22
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@24" END
+
+// Halberd of Knowing +5
+COPY ~abystore/itm/r#ashalb.itm~ ~override~
+//	SAY NAME1 @25	SAY UNIDENTIFIED_DESC @27
+	SAY NAME2 @26
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@28" END
+
+// Abysima
+COPY ~abystore/cre/r#asdemn.cre~ ~override~
+	SAY NAME1 @29
+	SAY NAME2 @30
+	WRITE_ASCII DIALOG ~R#ASDEMN~
+
+COMPILE ~abystore/dlg/abysima.d~
+
+EXTEND_BOTTOM ~ar0300.bcs~ ~abystore/baf/abyarea.baf~
+
+// Abysima's Store
+COPY ~abystore/store/r#asdemn.sto~ ~override~
+	SAY NAME2 @31
+
