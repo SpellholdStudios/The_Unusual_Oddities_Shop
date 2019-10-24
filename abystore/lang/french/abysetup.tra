@@ -1,0 +1,218 @@
+@9001 = ~[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+
+@100 = ~Magasin des Curiosites Inhabituelles~
+@101 = ~Ce mod ne s'installe que sur BG2, ToB, BG2:EE ou EET.~
+
+//@1	= ~<No Text>~
+@2	= ~Fléau des Orques~
+//@3	= ~<No Text>~
+@4	= ~Fléau des Orques
+Cette ancienne épée fut forgée par le cercle elfique de la Seldarine pour les aider dans leur guerre contre les orques. Malheureusement, l'épée fut perdue sur un champ de bataille par un elfe incroyablement étourdi. Désormais, elle vous appartient.
+
+PARAMÈTRES :
+
+Capacité d'équipement :
+- Octroie 3 sorts supplémentaires de niveau 6.
+
+Enchantement : +3
+
+Utilisable par :
+ Mage~
+
+//@5	= ~<No Text>~
+@6	= ~Cotte de mailles de Loren +5~
+//@7	= ~<No Text>~
+@8	= ~Cotte de mailles de Loren +5
+Il s'agit de la tenue traditionnelle d'une secte très secrète de clercs elfes. Celui-ci fut créé pour pour leur ancien chef, Loren Lameargent. La façon dont cette armure lui a été arrachée s'est perdue dans les méandres du temps, mais les propriétés magiques qu'elle offre aux prêtres restent inégalées.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Classe d'armure : 0
+- Octroie 3 sorts supplémentaires de niveau 4.
+- Octroie 2 sorts supplémentaires de niveau 5.
+- Octroie 1 sort supplémentaire de niveau 6.
+
+Utilisable par :
+ Clerc~
+
+//@9	= ~<No Text>~
+@10	= ~Bouclier des Seigneurs +4~
+//@11	= ~<No Text>~
+@12	= ~Bouclier des Seigneurs +4
+Ce bouclier est une création du Baron M'Septir. Son armée fut forcée d'affronter de nombreux mages pour sauver sa dulcinée de son emprisonnement. Malheureusement, le Baron avait une peur panique de la magie. Il fit donc fabriquer ce bouclier qu'il mania au cours de la bataille. Il est inutile de préciser qu'il a finalement gagné et qu'il parvint à sauver celle qu'il aimait.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Classe d'armure : +5
+- Immunité aux sorts de niveau 1
+- Sagesse : +1
+- JS contre les sorts : +3~
+
+//@13	= ~<No Text>~
+@14	= ~Manteau des Dieux~
+//@15	= ~<No Text>~
+@16	= ~Manteau des Dieux
+On sait peu de choses sur l'histoire de cet objet. Cependant, à en juger par son incroyable puissance, il est possible qu'il s'agisse d'un manteau abandonné par une divinité mineure.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Immunité aux attaques sournoises
+- Octroie 5 sorts supplémentaires de niveau 6.
+- Octroie 4 sorts supplémentaires de niveau 7.
+- Octroie 2 sorts supplémentaires de niveau 8.
+- Octroie 1 sort supplémentaire de niveau 9.
+
+Utilisable par :
+ Mage~
+
+//@17	= ~<No Text>~
+@18	= ~Bracelets de mage mineurs~
+//@19	= ~<No Text>~
+@20	= ~Bracelets de mage mineurs
+Ces bracelets furent conçus pour un mage. Il semble qu'un alchimiste fou les ait forgés. Ils améliorent les capacités de combat d'un mage.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- +15 Points de vie
+- Régénération : 1 PV toutes les 5 secondes
+
+Utilisable par :
+ Mage~
+
+//@21	= ~<No Text>~
+@22	= ~Bâton du dragon +3~
+//@23	= ~<No Text>~
+@24	= ~Bâton du dragon +3
+Le demi-mage Vélios brandit ce bâton dans sa quête pour récupérer de puissants artefacts sur le plan du Feu. Sa quête a échoué, et le bâton a apparemment reçut des attributs inhabituels en raison de son emprisonnement dans ce plan.
+
+PARAMÈTRES :
+
+Capacité d'équipement :
+- Le porteur est sous l'effet d'Action libre
+
+THAC0 : +3
+Dégâts : 1d8 +3, +5 de feu
+Facteur de vitesse : 7~
+
+//@25	= ~<No Text>~
+@26	= ~La Hallebarde de connaissance +5~
+//@27	= ~<No Text>~
+@28	= ~La Hallebarde de connaissance +5
+Cette hallebarde incroyablement puissante porte en elle le pouvoir de la connaissance. Quiconque l'utilise comprendra immédiatement comment s'en servir, comme si elle avait des années de pratique. Cette arme confère également des résistances magiques celui/celle qui la manie.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Force de l'utilisateur portée à 18
+- Accorde la maîtrise (4 étoiles) en maniement des hallebardes
+- Résistance au froid : +50 %
+- Résistance à l'acide : +50 %
+
+THAC0 : +5
+Dégâts : 1d8 +5 (perforant) +2 (froid) +2 (acide)
+Facteur de vitesse : 4~
+
+@29	= ~Abysima~
+@30	= ~Abysima~
+
+@31	= ~Le Magnifique Magasin des Curiosités Inhabituelles~
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

@@ -1,0 +1,116 @@
+@100 =~Negozio delle Insolite Stranezze~
+@101 =~Questo componente non e disponibile per il tuo gioco.~
+
+@9001 =~[Uu]tilizzabile[ %tab%]+[Da]a[ %tab%]*:~
+@9002 =~[Nn]on[ %tab%]+[Uu]tilizzabile[ %tab%]+[Da]a[ %tab%]*:~
+
+//@1	=~<No Text>~
+@2	=~Piaga dell'Orco~
+//@3	=~<No Text>~
+@4	=~Piaga dell'Orco
+Questa vecchia spada fu forgiata dalla cerchia elfica dei seldarine come aiuto durante la guerra agli orchi infedeli. Sfortunatamente, la spada fu perduta sul campo di battaglia da un elfo incredibilmente distratto. Ora ti appartiene.
+
+STATISTICHE
+
++3 Incantamento
++3 Incantesimi di 6° livello.
+
+Utilizzabile da:
+Mago~
+
+//@5	=~<No Text>~
+@6	=~Cotta di maglia di Loren +5~
+//@7	=~<No Text>~
+@8	=~Cotta di maglia di Loren +5
+Questo è l'abito tradizionale di una setta segreta di elfi chierici. Questa in particolare fu creata per colui che ne era il capo, Loren Silverblade. Come gli fu strappata è andato perso da lungo negli anni, ma le abilità magiche che garantisce ai chierici sono senza pari.
+
+STATISTICHE
+
+CA: 0
++3 Incantesimi di 4° Livello
++2 Incantesimi di 5° Livello
++1 Incantesimo di 6° Livello
+
+Utilizzabile da:
+Chierico (Multi-, Singolo-, e Dual-Classe)~
+
+//@9	=~<No Text>~
+@10	=~Scudo dei Lord +4~
+//@11	=~<No Text>~
+@12	=~Scudo dei Lord +4
+Questo scudo fu creato dal Barone M'Septir. Il suo esercito dovette affrontare un esercito di maghi per salvare la sua amata dalla sua prigionia. Sfortunatamente, il Barone aveva una grande paura della magia. Si costrui e uso questo scudo nella battaglia. Inutile dire che vinse e che alla fine riuscì a salvare la ragazza.
+
+STATISTICHE
+
+CA: 5
+Immunità agli Incantesimi di 1° livello
++1 Saggezza
++3 Tiri Salvezza contro Magie~
+
+//@13	=~<No Text>~
+@14	=~Mantello degli Dei~
+//@15	=~<No Text>~
+@16	=~Mantello degli Dei
+Si conosce poco della storia di questo mantello. Giudicando dall'incredibile potere, tuttavia, è possibile che sia un mantello abbandonato da qualche divinità minore.
+
+STATISTICHE
+
+Immunità al Colpo alle Spalle
++5 Incantesimi di 6 Livello
++4 Incantesimi di 7 Livello
++3 Incantesimi di 8 Livello
++1 Incantesimo di 9 Livello
+
+Utilizzabile da:
+Mago (Multi-, Singolo- e Dual-Classe)~
+
+//@17	=~<No Text>~
+@18	=~Bracciali Minori del Mago~
+//@19	=~<No Text>~
+@20	=~Bracciali Minori del Mago
+Questi bracciali sono stati creati per un mago. Sembra che qualche folle alchimista li abbia forgiati. Incrementano le abilità di combattimento del mago.
+
+STATISTICHE
+
++ 15 Punti Ferita
+Rigenera 1 PF ogni 5 secondi
+
+Utilizzabile da:
+Mago (Multi-, Singolo-, e Dual-Classe)~
+
+//@21	=~<No Text>~
+@22	=~Bastone del Drago +3~
+//@23	=~<No Text>~
+@24	=~Bastone del Drago +3
+Velios il Demi-Mago brandì questo bastone durante la sua missione per recuperare alcuni potenti artefatti dal piano del fuoco. La sua missione fallì, e il bastone apparentemente prese diverse insolite attributi come risultato del suo imprigionamento in quel piano.
+
+STATISTICHE
+
++3 Bonus al THAC0
+Conferisce Liberta d'Azione al possessore
+Danno: 1d8+3
+Fattore Velocità: 7
++5 danno da fuoco per colpo~
+
+//@25	=~<No Text>~
+@26	=~L'Alabarda della Conoscenza +5~
+//@27	=~<No Text>~
+@28	=~L'Alabarda della Conoscenza +5
+Questa alabarda incredibilmente potente porta con sè il potere della conoscenza. Tutte le persone che la impugnano sapranno subito come servirsene, come se avessero anni di esperienza. Offre inoltre delle resistenze magiche al suo portatore.
+
+STATISTICHE
+
++5 Bonus al THAC0
+Danno: 1d8+5
+Fattore Velocità: 4
+Fissa la forza a 18
+Fissa l'abilità con l'Alabarda al livello Maestro
++50% Resistenza al freddo
++50% Resistenza all'acido
++2 danno da freddo per colpo
++2 danno da acido per colpo~
+
+@29	=~Abysima~
+@30	=~Abysima~
+
+@31	=~Il Magnifico Negozio delle Stranezze~

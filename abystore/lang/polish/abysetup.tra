@@ -1,0 +1,207 @@
+@100 =~Sklep Niezwyk³oœci~
+@101 = ~Modyfikacja nie jest dostepny dla twojej gry.~
+
+@9001 =~[Mo]oze[ %tab%]+[Uu]zywac[ %tab%]*:~
+@9002 =~[Nn]ie[ %tab%]+[Mm]oze[ %tab%]+[Uu]zywac[ %tab%]*:~
+
+//@1	=~<No Text>~
+@2	=~Karciciel Orków~
+//@3	=~<No Text>~
+@4	=~Karciciel Orków
+Ten pradawny miecz zosta³ wykuty przez sektê wojowniczych elfich kap³anów s³u¿¹cych Seldarine. Ostrze zosta³o nape³nione nienawiœci¹ Corelonna do plugawych orków. Miecz zagin¹ podczas jednej z bitew, teraz nale¿y do ciebie.
+
+STATYSTYKI
+
++3 Umagicznienie
+- Dodatkowe 3 czary 6 poziomu
+
+Moze uzywac:
+ Mag~
+
+//@5	=~<No Text>~
+@6	=~Kolczuga Lorena +5~
+//@7	=~<No Text>~
+@8	=~Kolczuga Lorena +5
+Jest to jedna z kolczug jak¹ nosili pradawni elfi kap³ani s³u¿¹cy Seldarine. Ten konkretny egzemplarz nale¿a³ do jednego z przywódców - Lorena Srebrnej Klingi. Zbroja jest ju¿ bardzo stara, ale magia jest w niej ci¹gle obecna.
+
+STATYSTYKI
+
+KP: 0
++3 czary 4 poziomu
++2 czary 5 poziomu
++1 czary 6 poziomu
+
+Moze uzywac:
+ Kap³an (Dowolna kombinacja)~
+
+//@9	=~<No Text>~
+@10	=~Tarcza Lordów +4~
+//@11	=~<No Text>~
+@12	=~Tarcza Lordów +4
+Tarcza ta nale¿a³a do Barona M'Septira, który wraz ze swoj¹ niedu¿¹ armi¹ stoczy³ epick¹ walkê z Czerwonymi Magami wiê¿¹cymi jej ukochan¹. Walka by³a krwawa ale Lord wraz z grupk¹ ocala³ych uratow¹ sw¹ ukochan¹ i uwolni³ ksiêstwo z jarzma z³ych magów.
+
+STATYSTYKI
+
+KP: 5
+- Odpornoœæ na czary 1 poziomu
++1 do M¹droœci
++3 do rzutów przeciw czarom~
+
+//@13	=~<No Text>~
+@14	=~P³aszcz Bogów~
+//@15	=~<No Text>~
+@16	=~P³aszcz Bogów
+Historia tego p³aszcza jest praktycznie nieznana, ale s¹dz¹c po jego mocy mo¿na wywnioskowaæ ¿e nale¿a³ on do jakiegoœ mniejszego bóstwa.
+
+STATYSTYKI
+
+Odpornoœæ na ciosy w plecy
++5 czarów 6 poziomu
++4 czarów 7 poziomu
++3 czarów 8 poziomu
++1 czarów 9 poziomu
+
+Moze uzywac:
+ Mag (dowolna kombinacja)~
+
+//@17	=~<No Text>~
+@18	=~Pomniejsze Bransolety Maga~
+//@19	=~<No Text>~
+@20	=~Pomniejsze Bransolety Maga
+Takie Bransolety s¹ wykonywane przez czeladników na koniec nauki u alchemika.
+
+STATYSTYKI
+
++15 P¯
+Regeneruje 1 P¯ co 5 sekund
+
+Moze uzywac:
+ Mag (Wszystkie mo¿liwoœci)~
+
+//@21	=~<No Text>~
+@22	=~Kostur Smoka +3~
+//@23	=~<No Text>~
+@24	=~Kostur Smoka +3
+Velios, Demi-Mag podj¹³ siê próby odzyskania kilku artefaktów z Planu Ognia. Misja zakoñczy³a siê klêsk¹ a jego kostur nabra³ ciekawych zdolnoœci.
+
+STATYSTYKI
+
+Premia +3 do THAC0
+Swoboda Dzia³ania
+Obra¿enia: 1k8+3 +5 od ognia
+OpóŸnienie: 7~
+
+//@25	=~<No Text>~
+@26	=~Halabarda Perfekcji +5~
+//@27	=~<No Text>~
+@28	=~Halabarda Perfekcji +5
+Ta oto potê¿na broñ posiada specyficzny typ samoœwiadomoœci. Ka¿dy kto j¹ dzier¿y staje siê mistrzem w jej w³adaniu. Broñ prowadzi go tak by zabi³.
+
+STATYSTYKI
+
+Premia +5 do THAC0
+Obra¿enia: 1k8+5 +2 od kwasu i ch³odu
+OpóŸnienie: 4
+Si³a ustawiona na 18
+Mistrz we w³adaniu Halabard¹
++50% odpornoœci na ch³ód i kwas~
+
+@29	=~Abysima~
+@30	=~Abysima~
+
+@31	=~Sklep Niezwyk³oœci~
+
+
+// WeiDU prompts
+@-1000 = ~Mod %TP2_FILE_NAME% posiada~
+@-1001 = ~opcjonalnych komponentow.
+~
+@-1002 = ~Co zrobic z komponentami, ktore NIE ZOSTALY jeszcze zainstalowane?
+[I] zainstaluj wszystkie, [S] pomin wszystkie, [A] zapytaj o kazdy z osobna
+~
+@-1003 = ~Co zrobic z komponentami, ktore ZOSTALY juz zainstalowane?
+[R] ponowna instalacja, [U] odinstaluj, [S] pomin, [A] zapytaj o kazdy z osobna
+~
+
+@-1004 = ~PROSZE, wyslij plik~
+@-1005 = ~do~
+
+@-1006 = ~Zainstalowac komponent [~
+@-1007 = ~]?
+[R] ponowna instalacja, [N] pozostaw bez zmian, [U] odinstaluj, [Q] zakoncz
+~
+@-1008 = ~]?
+[I] tak, [N] nie, [Q] zakoncz
+~
+
+@-1009 = ~Wprowadz fragment nazwy modulu: ~
+
+@-1010 = ~Re-instalacja [~
+@-1011 = ~] komponentu~
+@-1012 = ~Re-instalacja z uzyciem jezyka~
+
+@-1013 = ~Usuwanie zainstalowanego komponentu [~
+@-1014 = ~] ...~
+@-1015 = ~POMYSLNIE USUNIETO~
+
+@-1016 = ~Instalacja~
+@-1017 = ~BLAD podczas instalacji [~
+@-1018 = ~], powrot do poprzedniego stanu~
+@-1019 = ~INSTALACJA ZAKONCZONA POMYSLNIE ~
+@-1020 = ~Pominieto~
+@-1021 = ~Usuwanie [~
+@-1022 = ~] (komponent #~
+@-1023 = ~)~
+@-1024 = ~POMYSLNIE USUNIETO [~
+
+@-1025 = ~]?
+[R] ponowna instalacja, [N] pozostaw bez zmian, [U] odinstaluj, [Q] zakoncz, lub wybierz:~
+@-1026 = ~]?
+[N] nie, [Q] zakoncz, lub wybierz:~
+
+@-1027 = ~ (zainstalowano)~
+@-1028 = ~Czy wyswietlic komponenty z grupy [~
+@-1029 = ~]?
+[Y] tak, [N] nie
+~
+
+@-1030 = ~]?
+Wybierz jedno:~
+@-1031 = ~]?
+[R] ponowna instalacja, [N] pozostaw bez zmian, [Q] zakoncz, lub wybierz:~
+@-1032 = ~NIE ZAINSTALOWANO Z POWODU BLEDOW~
+@-1033 = ~INSTALACJA ZAKONCZONA POMIMO BLEDOW~
+@-1034 = ~Czy wyswietlic plik ReadMe? [Y] tak, [N] nie~
+@-1035 = ~Uzywany jezyk~
+
+@-1036 = ~Pominieto GRUPE [~
+@-1037 = ~] gdyz nie spelnia wymagan.~
+
+@-1038 = ~[A] zapytaj o kazdy z osobna, [S] pomin, lub wybierz ustawienia:~
+@-1039 = ~[A] zapytaj o kazdy z osobna, [R] ponowna instalacja, [U] odinstaluj, [S] pomin, lub wybierz ustawienia:~
+
+@-1040 = ~
+Prosze wybrac podstawowy jezyk, ktory uzywasz w grze.
+Ewentualna pozniejsza zmiana jezyka gry wiazac sie bedzie z koniecznoscia edycji pliku weidu.conf i ponownej instalacji modow.
+~
+@-1041 = ~czeski~
+@-1042 = ~niemiecki~
+@-1043 = ~angielski~
+@-1044 = ~hiszpanski~
+@-1045 = ~fransuski~
+@-1046 = ~wloski~
+@-1047 = ~polski~
+@-1048 = ~portugalski~
+@-1049 = ~turecki~
+@-1050 = ~japonski~
+@-1051 = ~koreanski~
+@-1052 = ~chinski uproszczony~
+
+@-1060 = ~
+Instalator WeiDU nie potrafi rozpoznac jakiego jezyka uzyto podczas instalacji tego modu.
+
+Prosze wybrac odpowiedni jezyk. Wybor nie zostanie zapisany w pliku weidu.conf.
+~
+@-1061 = ~
+Uzywam~
+@-1062 = ~ oraz ~

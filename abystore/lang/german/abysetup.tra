@@ -1,0 +1,210 @@
+@100 =~Laden mit ungewöhnlichen Gegenständen~
+@101 = ~Diese Mod benoetigt BG2, TdB, BGT, BG2:EE oder EET.~
+
+@9001 =~[K]kann[ %tab%]+[Nn]ur[ %tab%]+[V]verwendet[ %tab%]+[W]werden[ %tab%]+[V]von[ %tab%]*:~	// Usable by:
+@9002 =~[K]kann[ %tab%]+[N]nicht[ %tab%]+[V]verwendet[ %tab%]+[W]werden[ %tab%]+[V]von[ %tab%]*:~	// Not usable by:
+
+//@1	=~<No Text>~
+@2	=~Orkschnitter~
+//@3	=~<No Text>~
+@4	=~Orkschnitter
+Dieses altertümliche Schwert wurde vom elfischen Zirkel der Seldarine als Teil ihres Kampfes gegen die Orks geschmiedet. Allerdings wurde es auf dem Schlachtfeld von einem leider sehr vergesslichen Elf liegengelassen. Jetzt gehört es Euch.
+
+EIGENSCHAFTEN:
+
++3 magischer Schaden
+Träger erhält 3 zusätzliche Zauber des 6. Grades
+
+Kann nur verwendet werden von:
+ Magiern~
+
+//@5	=~<No Text>~
+@6	=~Lorens Kettenhemd~
+//@7	=~<No Text>~
+@8	=~Lorens Kettenhemd
+Dies ist das traditionelle Gewand einer geheimen Sekte elfischer Kleriker. Dieses spezielle Kettenhemd wurde für ihren zeitweiligen Führer, Loren Silberklinge, gefertigt. Wie es von ihm getrennt werden konnte, ist zwar schon lange vergessen, doch die Kräfte, die es seinem klerikalen Träger liefert, sind noch immer ungebrochen.
+
+EIGENSCHAFTEN:
+
++3 Zauber des 4. Grades
++2 Zauber des 5. Grades
++1 Zauber des 6. Grades
+
+Rüstungsklasse: 0
+
+Kann nur verwendet werden von:
+ Klerikern (einzel- und mehrklassig)~
+
+//@9	=~<No Text>~
+@10	=~Schild der Lords~
+//@11	=~<No Text>~
+@12	=~Schild der Lords
+Dieser Schild wurde von Baron M'Septir gefertigt. Seine Armee bekämpfte einst eine Armee aus Magiern, um seine Geliebte aus der Gefangenschaft zu befreien. Allerdings hatte der Baron stets extreme Angst vor Magie und führte deshalb diesen selbstgefertigten Schild, der ihn in der Schlacht vor der Magie des Feindes schützte und ihm vielleicht sogar die Befreiung seiner Geliebten ermöglichte.
+
+EIGENSCHAFTEN:
+
+Träger wird immun gegen Zauber des 1. Grades
+Träger erhält +1 auf Weisheit
+Schutz vor Zaubern: +3
+
+Rüstungsklasse: 5~
+
+//@13	=~<No Text>~
+@14	=~Mantel der Götter~
+//@15	=~<No Text>~
+@16	=~Mantel der Götter
+Über die Geschichte dieses Gegenstandes ist nur wenig bekannt. Wenn man allerdings von der enormen Macht dieses Umhangs ausgeht, könnte man schließen, dass er vielleicht einmal einer minderen Gottheit gehört hat.
+
+EIGENSCHAFTEN:
+
+Gewährt Immunität gegen hinterhältige Angriffe
++5 Zauber des 6. Grades
++4 Zauber des 7. Grades
++3 Zauber des 8. Grades
++1 Zauber des 9. Grades
+
+Kann nur verwendet werden von:
+ Magiern (einzel- und mehrklassig)~
+
+//@17	=~<No Text>~
+@18	=~Handschuhe des minderen Magiers~
+//@19	=~<No Text>~
+@20	=~Handschuhe des minderen Magiers
+Diese Handschuhe wurden scheinbar von einigen verrückten Alchimisten für einen Magier hergestellt. Sie verbessern die Kampfkünste des Trägers.
+
+EIGENSCHAFTEN:
+
++15 Trefferpunkte
+Träger regeneriert 1 Trefferpunkt/5sec.
+
+Kann nur verwendet werden von:
+ Magiern (einzel- und mehrklassig)~
+
+//@21	=~<No Text>~
+@22	=~Stab des Drachen~
+//@23	=~<No Text>~
+@24	=~Stab des Drachen
+Velios der Halbdrache führte diesen Stab bei seiner Suche nach mächtigen Artefakten in der elementaren Ebene des Feuers. Seine Suche schlug fehl und der Stab ging verloren, doch durch seinen langen Aufenthalt in der Ebene verfügt er jetzt über beeindruckende elementarmagische Fähigkeiten.
+
+EIGENSCHAFTEN:
+
+Auf dem Träger liegt permanente Handlungsfreiheit
+
+ETW0-Bonus: +3
+Schaden: 1W8+3 (Wucht),+5 (Feuer)
+Initiativefaktor: 7~
+
+//@25	=~<No Text>~
+@26	=~Hellebarde des Wissens~
+//@27	=~<No Text>~
+@28	=~Hellebarde des Wissens
+Diese unglaublich mächtige Hellebarde trägt die Kraft des Wissens in sich. Jeder, der diese Waffe trägt, erhält auf magische Weise auch das Wissen, sie meisterlich zu führen. Zusätzlich verleiht sie dem Träger auch noch weitere magische Resistenzen.
+
+EIGENSCHAFTEN:
+
++50% Kälte-/Säureresistenz
+Setzt Stärke auf 18
+Träger erhält Fähigkeit Hellebarde auf Meisterlevel
+
+ETW0-Bonus: +5
+Schaden: 1W8+5 (Klinge),+2 (Kälte),+2 (Säure)
+Initiativefaktor: 4~
+
+@29	=~Abysima~
+@30	=~Abysima~
+
+@31	=~Laden mit ungewöhnlichen Gegenständen~
+
+
+// WeiDU prompts
+@-1000= "Die %TP2_FILE_NAME%-Mod besitzt"
+@-1001= "verschiedene optionale Komponenten.
+Um Zeit zu sparen, koennen Sie waehlen, was Sie mit ihnen im Allgemeinen
+machen moechten, anstatt nach jeder einzelnen gefragt zu werden.
+"
+@-1002= "Was soll mit den Komponenten getan werden, die NOCH NICHT installiert wurden?
+[I]nstallieren, Ueber[S]springen, jeweils n[A]chfragen? "
+@-1003= "Was soll mit den Komponenten getan werden, die BEREITS installiert wurden?
+[R]Neuinstallation, [U]Entfernen, Ueber[S]pringen, jeweils n[A]chfragen? "
+
+@-1004= "Bitte sichern Sie folgende Datei:"
+@-1005= "und suchen sie hier nach Hilfe:"
+
+@-1006= "Installiere Komponente ["
+@-1007= "]?
+[R]Neuinstallation, Kei[N]e Aenderung, [U]Entfernen oder [Q]uit? "
+@-1008= "]?
+[I]nstallieren, [N]icht installieren oder [Q]uit? "
+
+@-1009= "Teil des Modulnamens eingeben: "
+
+@-1010= "Neuinstallation der ["
+@-1011= "]-Komponente "
+@-1012= "Neuinstallation in der Sprache"
+
+@-1013= "Entferne zuerst alte Installation von ["
+@-1014= "] ..."
+@-1015= "ALTE INSTALLATION ERFOLGREICH ENTFERNT"
+
+@-1016= "Installiere"
+@-1017= "FEHLER bei der Installation von ["
+@-1018= "], vorheriger Zustand wird wiederhergestellt"
+@-1019= "ERFOLGREICH INSTALLIERT     "
+@-1020= "Ueberspringe"
+@-1021= "Entferne ["
+@-1022= "] (Komponente #"
+@-1023= ")"
+@-1024= "ERFOLGREICH ENTFERNT: ["
+
+@-1025= "]?
+[R]Neuinstallation, Kei[N]e Aenderung, [U]Entfernen, [Q]uit oder Auswahl:"
+@-1026= "]?
+[N]ein, [Q]uit oder Auswahl:"
+@-1027= " (bereits installiert="
+
+@-1028= "Komponenten anzeigen von ["
+@-1029= "]?
+[Y]Ja, [N]ein? "
+
+@-1030= "]?
+Auswahl:"
+@-1031= "]?
+[R]Neuinstallation, Kei[N]e Aenderung, [Q]uit oder Auswahl:"
+@-1032= "NICHT INSTALLIERT WEGEN FEHLER"
+@-1033= "MIT WARNUNGEN INSTALLIERT    "
+@-1034= "Soll die Liesmich angezeigt werden? [Y]Ja [N]ein"
+@-1035= "Benutze Sprache"
+
+@-1036= "Ueberspringe GRUPPE ["
+@-1037= "] wegen nicht erfuellter Anforderungen."
+
+@-1038= "Jede Komponente n[A]chfragen, Alle ueber[S]pringen oder Vorauswahl treffen:"
+@-1039= "Jede Komponente n[A]chfragen, Auswahl neu installie[R]en, [U]Alle entfernen, Alle ueber[S]pringen oder Vorauswahl treffen:"
+
+@-1040= "
+Waehlen Sie bitte die Sprache, in der Sie das Spiel spielen wollen.
+Wenn Sie spaeter das Spiel in einer anderen Sprache spielen wollen, muessen Sie die Datei weidu.conf bearbeiten und Ihre Mods neu installieren.
+"
+@-1041= "Tschechisch"
+@-1042= "Deutsch"
+@-1043= "Englisch"
+@-1044= "Spanisch"
+@-1045= "Franzoesisch"
+@-1046= "Italienisch"
+@-1047= "Polnisch"
+@-1048= "Portugiesisch"
+@-1049= "Tuerkisch"
+@-1050= "Japanisch"
+@-1051= "Koreanisch"
+@-1052= "Vereinfachtes Chinesisch"
+@-1053= "Russisch"
+@-1054= "Ukrainisch"
+
+@-1060= "
+Dieses Spiel ist in mehreren Sprachen verfuegbar, aber WeiDU weiss nicht, welche Spielsprache verwendet wurde, als diese Mod installiert wurde.
+
+Geben Sie bitte an, in welcher Spielsprache diese Mod installiert wurde. Ihre Auswahl wird nicht gespeichert und nur solange genutzt, bis WeiDU beendet wird.
+"
+@-1061= "
+Benutze"
+@-1062= " und "
