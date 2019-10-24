@@ -1,0 +1,95 @@
+Abysima's Items
+
+Orc Render
+This ancient sword was forged by the elven circle of the Seldarine as part of their war against the infidel orcs. Unfortunately, the sword ended up getting left on the battlefield by an incredibly forgetful elf. Now it belongs to you.
+
+STATISTICS
+
++3 Enchantment
+Gives +3 bonus 6th level spells.
+
+Usable by:
+ Mage 
+
+Loren's Chain +5 
+This is the traditional garb of a very secretive sect of elven clerics. This particular one was made for their one-time leader, Loren Silverblade. How it was wrested from him has been long lost in time, but the magical abilities that it grants priests are unmatched.
+
+STATISTICS
+AC: 0
++3 Level 4 Spells
++2 Level 5 Spells
++1 Level 6 Spell
+Usable by:
+ Cleric (Multi-, Single-, and Dual-Class) 
+
+Shield of the Lords +4 
+This shield was the creation of Baron M'Septir. His army was forced to fight an army of mages in order to save his beloved from her imprisonment. Unfortunately, the Baron had an intense fear of magic. He crafted and wielded this shield in the battle. Needless to say, he won and eventually managed to save the girl.
+
+STATISTICS
+
+AC: 5
+Immunity to Level 1 Spells
++1 Wisdom
++3 Save vs. Spells 
+
+Cloak of the Gods 
+There is little known about the history of this item. Judging by the incredible power of it, however, it is possible that it was a discarded cloak of some minor deity.
+
+STATISTICS
+
+Immunity to Backstab
++5 Level 6 Spells
++4 Level 7 Spells
++3 Level 8 Spells
++1 Level 9 Spell
+
+Usable by:
+ Mages (Multi-, Single- and Dual-Class)
+
+Minor Mage Gauntlets 
+These gauntlets were designed for a mage. It seems like some foolish alchemist designed these. It increases the mage's combat abilities.
+
+STATISTICS
++15 Hit Points
+Regenerate 1 HP every 5 seconds
+
+Usable by:
+ Mages (Multi-, Single-, and Dual-Class) 
+
+Staff of the Dragon +3
+Velios the Demi-Mage wielded this staff on his quest to recover some powerful artifacts from the plane of fire. His quest failed, and the staff apparently took on some unusual attributes as a result of its entrapment in that plane.
+
+STATISTICS
+
++3 Bonus to THAC0
+Bestows Free Action upon the wielder
+Damage: 1d8+3
+Speed Factor: 7
++5 Fire Damage per hit
+
+The Halberd of Knowing +5 
+This incredibly powerful halberd carries the power of knowledge with it. Any person wielding it will instantly find themselves knowing how, as if they had years of practice. It also bestows some other magical resistances upon its wielder.
+
+STATISTICS
+
++5 Bonus to THAC0
+Damage: 1d8+5
+Speed Factor: 4
+Sets Strength to 18
+Sets Halberd Proficiency to mastery level
++50 Cold Resistance
++50 Acid Resistance
++2 Cold Damage per hit
++2 Acid Damage per hit
+
+__________'s Items
+
+Clanker's Amulet
+This amulet is large and makes a lot of noise when walking. So much, in fact, that it is not possible to hide or even go invisible because of the noise that the amulet makes. It does make its wearer immune to silence, however.
+STATISTICS
+
+Immune to Silence, Invisibility
+-20 to Stealth
+Elminister's Hat
+
+
