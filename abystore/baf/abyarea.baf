@@ -4,4 +4,5 @@ THEN
   RESPONSE #100
     SetGlobal("r#AbysimaExists","AR0300",1)
     CreateCreature("r#asdemn",[2859.1262],5)
+	Continue()
 END
