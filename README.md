@@ -37,7 +37,7 @@ Baldur's Gate Trilogy and EET</h3>
 
 This mod adds a (very unusual) merchant in the Docks district of Athkatla. You can find her in front of the Temple of Ohgma. The store works the same as any other merchant, just talk to her to get the option of buying her goods.
 
-She sells a variety of unusual goods. Some is overpowered, some is impractical. Please see <a href="https://raw.githubusercontent.com/GwendolyneFreddy/TheUnusualOdditiesShop/master/abystore/readme/abystore-desc.txt">abystore-readme.txt</a> for details.
+She sells a variety of unusual goods. Some is overpowered, some is impractical. Please see <a href="http://spellholdstudios.github.io/readmes/abystore-desc.txt">abystore-readme.txt</a> for details.
 
 
 <hr>
@@ -127,6 +127,7 @@ The installer includes one single component, the main component.
 
 #### Author: <a href="http://www.shsforums.net/user/1153-rastor/">Rastor</a>  
 
+## 
 
 #### Special Acknowledgements to:
 
@@ -139,6 +140,7 @@ The installer includes one single component, the main component.
 - Riklaunim: Polish translation.
 - Fans of BG2: You're the ones that I keep making this stuff for.
 
+## 
 
 #### Programs/tools used in creation
 
@@ -152,6 +154,7 @@ The installer includes one single component, the main component.
 
 If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/60756-the-unusual-oddities-shop-updated-to-v50/">mod forum</a>.</br>
 
+## 
 
 #### Copyrights Information
 
