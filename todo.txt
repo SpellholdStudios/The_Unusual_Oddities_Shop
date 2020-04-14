@@ -1,0 +1,3 @@
+- Rewrite all description items
+- check all items effects
+- Remove 1PP check once 1PP update is released
