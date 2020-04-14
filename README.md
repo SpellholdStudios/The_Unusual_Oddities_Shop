@@ -13,7 +13,7 @@ Baldur's Gate Trilogy and EET</h3>
 
 **Original Author:** Rastor  
 **Mod Website:** <a href="http://www.shsforums.net/forum/127-mod-resurrections/">Spellhold Studios</a>  
-**Mod Forum:** <a href="http://www.shsforums.net/topic/60756-the-unusual-oddities-shop-updated-to-v50/">Spellhold Studios</a><br /><br />
+**Mod Forum:** <a href="http://www.shsforums.net/topic/60756-the-unusual-oddities-shop-updated-to-v50/">The Unusual Oddities Shop</a><br /><br />
 
 
 [Read the mod's readme](http://spellholdstudios.github.io/readmes/abystore-readme-english.html)
