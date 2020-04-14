@@ -1,0 +1,111 @@
+/* ======================================================================================================================= *
+ *  Code borrowed from Erephine's 1PP v5.0.0 (revised by Gwendolyne) to provide full compatibility with 1PP and EE games.  *
+ *  Those functions restore items coloration for EE games or if 1PP relevant components are installed.                     *
+ * ----------------------------------------------------------------------------------------------------------------------- *
+ *  Reprise du code de 1PP v5.0.0 (Erephine) pour assurer une compatibilité totale avec 1PP et les jeux EE.                *
+ *  Ces fonctions restaurent les couleurs des objets utilisées par les jeux EE et certains composants de 1PP.              *
+ * ======================================================================================================================= */
+
+// Shield of the Lords +4
+// ----------------------
+DEFINE_PATCH_FUNCTION ~1pp_shld32~ BEGIN
+	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN	// protects against invalid files
+		WRITE_ASCII 0x22 ~C3~			// replaces D3 Medium shield
+		LPM ~clear~
+		SET gradient = 209				// 209 ATH_PEASANT_MINOR-ASH_GRAY replaces colour index 42 BEIGE
+		SET location = sgrey			// location (Hub)
+		LPM ~colour~
+		SET gradient = 93				// sets colour index 93 DARK_CEMENT_GRAY
+		SET location = steal			// location (Interior)
+		LPM ~colour~
+		SET gradient = 209				// 209 ATH_PEASANT_MINOR-ASH_GRAY replaces colour index 94 RHUBARB
+		SET location = sblue			// location (Body/trim)
+		LPM ~colour~
+		SET gradient = 127				// sets colour index 127 DARK_BRICK_RED
+		SET location = spink			// location (Panel)
+		LPM ~colour~
+	END
+END
+
+// Staff of the Dragon +3
+// ----------------------
+DEFINE_PATCH_FUNCTION ~1pp_staf23_0~ BEGIN
+	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+		LPM ~clear~
+		SET gradient = 36		// 36 LIGHT_DIRTY_YELLOW replaces colour index 53
+		SET location = wgrey	// location (Head/Blade/Staff major)
+		LPM ~colour~
+		SET gradient = 35		// sets colour index 35 LIGHT_YELLOW-DARK_PURPLE
+		SET location = wteal	// location (Staff minor)
+		LPM ~colour~
+		SET gradient = 86		// sets colour index 86 CHROME_GREEN
+		SET location = wpink	// location (Bolt-Mace-Staff)
+		LPM ~colour~
+		SET gradient = 37		// sets colour index 37 DARK_DIRTY_YELLOW
+		SET location = wblue	// location (Head/Blade minor)
+		LPM ~colour~
+		SET gradient = 52		// sets colour index 52 LIGHT_GREEN
+		SET location = wred		// location * compatibility
+		LPM ~colour~
+		SET setr = 0x21
+		SET setg = 0xC0
+		SET setb = 0x00
+		SET speed = 0x28
+		SET location = wgrey	// location (Head/Blade/Staff major)
+		LPM ~pulse~
+		SET setr = 0x37
+		SET setg = 0xA6
+		SET setb = 0x00
+		SET speed = 0x28
+		SET location = wteal	// location (Staff minor)
+		LPM ~pulse~
+		SET setr = 0x21
+		SET setg = 0xD2
+		SET setb = 0x00
+		SET speed = 0x28
+		SET location = wpink	// location (Bolt-Mace-Staff)
+		LPM ~pulse~
+		SET setr = 0x21
+		SET setg = 0xC0
+		SET setb = 0x00
+		SET speed = 0x28
+		SET location = wblue	// location (Head/Blade minor)
+		LPM ~pulse~
+		SET setr = 0x21
+		SET setg = 0xC0
+		SET setb = 0x00
+		SET speed = 0x28
+		SET location = wred		// location * compatibility
+		LPM ~pulse~
+	END
+END
+
+DEFINE_PATCH_FUNCTION ~1pp_staf23~ BEGIN
+	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN	// protects against invalid files
+		WRITE_ASCII 0x22 ~Q3~			// Quarterstaff (alternate 2)
+	END
+END
+
+// Halberd of Knowing +5
+// ---------------------
+DEFINE_PATCH_FUNCTION ~1pp_halb10~ BEGIN
+	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN	// protects against invalid files
+		WRITE_ASCII 0x58 ~CHALB07~ #8	// replaces PHALB10
+		LPM ~clear~
+		SET setr = 241
+		SET setg = 188
+		SET setb = 112
+		SET speed = 0x32
+		SET location = wgrey			// location (Head/Blade/Staff major)
+		LPM ~pulse~
+		SET gradient = 240				// 240 CLERIC_EVIL_MINOR-PALE_RUST replaces colour index 27 GRAY
+		SET location = wgrey			// location (Head/Blade/Staff major)
+		LPM ~colour~
+		SET gradient = 253				// 253 DUERGAR_MINOR-PALE_TAUPE replaces colour index 27 GRAY
+		SET location = wblue			// location (Head/Blade minor)
+		LPM ~colour~
+		SET gradient = 237				// 237 CLERIC_NEUTRAL_MAJOR-TAUPE replaces colour index 99 GOLDEN_BROWN
+		SET location = wred				// location (Grip/Staff minor - vanilla = whole staff)
+		LPM ~colour~
+	END
+END

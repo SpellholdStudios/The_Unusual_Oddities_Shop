@@ -1,8 +1,8 @@
 /* ================================================================================================================================================== *
  * LIST of FUNCTIONS :                                                                                                                                *
  * -------------------                                                                                                                                *
- *  - FUNCTION GW_UPDATE_ITM_DESCRIPTION_TO_EE		: MODIFIES item descriptions to fit EE description format.                         => line #   9  *
- *  - FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS			: WRITES item descriptions in ITM files according to the game (classical or EE).   => line #  49  *
+ *  - FUNCTION GW_UPDATE_ITM_DESCRIPTION_TO_EE      : MODIFIES item descriptions to fit EE description format.                         => line #   9  *
+ *  - FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS         : WRITES item descriptions in ITM files according to the game (classical or EE).   => line #  49  *
  * ================================================================================================================================================== */
 
 /* ========================================================================================================== *
@@ -35,7 +35,7 @@ OUTER_SPRINT GW_desc_updated
 			INCLUDE ~.../inlined/GW_%GW_desc_to_update%.tpp~
 			OUTER_SPRINT usab @9001		// ~[Uu]niquement[ %tab%]+[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 			OUTER_SPRINT unus @9002		// ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
-			OUTER_PATCH_SAVE GW_desc_updated ~%GW_desc_updated%~ BEGIN	// Suppression de toutes les références aux classes et aux kits pouvant ou pas utiliser l'objet.
+			OUTER_PATCH_SAVE GW_desc_updated ~%GW_desc_updated%~ BEGIN	// Suppression de toutes les références aux classes et aux kits pouvant ou pas utiliser l'objet. - Removes all classes and kits (un-)usability flags.
 				REPLACE_TEXTUALLY ~\(\([%LNL%%MNL%%WNL%][ %TAB%]*\(%usab%\|%unus%\)[ %TAB%]*\)\(\([%LNL%%MNL%%WNL%].*\)*\)?\)~  ~~
 			END
 		END ELSE BEGIN
