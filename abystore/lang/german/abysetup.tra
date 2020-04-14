@@ -1,9 +1,15 @@
-@100 =~Laden mit ungewöhnlichen Gegenständen~
+@100 = ~Laden mit ungewöhnlichen Gegenständen~
 @101 = ~Diese Mod benoetigt BG2, TdB, BGT, BG2:EE oder EET.~
 
+/* ================= *
+ *  Usability flags  *
+ * ================= */
 @9001 =~[K]kann[ %tab%]+[Nn]ur[ %tab%]+[V]verwendet[ %tab%]+[W]werden[ %tab%]+[V]von[ %tab%]*:~	// Usable by:
 @9002 =~[K]kann[ %tab%]+[N]nicht[ %tab%]+[V]verwendet[ %tab%]+[W]werden[ %tab%]+[V]von[ %tab%]*:~	// Not usable by:
 
+/* ======= *
+ *  Items  *
+ * ======= */
 //@1	=~<No Text>~
 @2	=~Orkschnitter~
 //@3	=~<No Text>~
@@ -12,8 +18,18 @@ Dieses altertümliche Schwert wurde vom elfischen Zirkel der Seldarine als Teil i
 
 EIGENSCHAFTEN:
 
-+3 magischer Schaden
 Träger erhält 3 zusätzliche Zauber des 6. Grades
+Bei jedem Treffer wird ein Ork sofort getötet (kein Rettungswurf).
+
+Schaden: 1W8 +3
+ETW0-Bonus: +3
+
+Initiativefaktor: 3
+Fertigkeit: Langschwert
+Typ: 1-händig
+Mindeststärke: 8
+
+Gewicht: 3
 
 Kann nur verwendet werden von:
  Magiern~
@@ -32,6 +48,8 @@ EIGENSCHAFTEN:
 
 Rüstungsklasse: 0
 
+Gewicht: 15
+
 Kann nur verwendet werden von:
  Klerikern (einzel- und mehrklassig)~
 
@@ -47,7 +65,17 @@ Träger wird immun gegen Zauber des 1. Grades
 Träger erhält +1 auf Weisheit
 Schutz vor Zaubern: +3
 
-Rüstungsklasse: 5~
+Rüstungsklasse: 5
+
+Gewicht: 15
+
+Kann nicht verwendet werden von:
+ Barde
+ Druide
+ Magier
+ Dieb
+ Mönch
+ Kensai~
 
 //@13	=~<No Text>~
 @14	=~Mantel der Götter~
@@ -63,6 +91,8 @@ Gewährt Immunität gegen hinterhältige Angriffe
 +3 Zauber des 8. Grades
 +1 Zauber des 9. Grades
 
+Gewicht: 2
+
 Kann nur verwendet werden von:
  Magiern (einzel- und mehrklassig)~
 
@@ -76,6 +106,8 @@ EIGENSCHAFTEN:
 
 +15 Trefferpunkte
 Träger regeneriert 1 Trefferpunkt/5sec.
+
+Gewicht: 2
 
 Kann nur verwendet werden von:
  Magiern (einzel- und mehrklassig)~
@@ -92,7 +124,15 @@ Auf dem Träger liegt permanente Handlungsfreiheit
 
 ETW0-Bonus: +3
 Schaden: 1W8+3 (Wucht),+5 (Feuer)
-Initiativefaktor: 7~
+Initiativefaktor: 7
+Fertigkeit: Kampfstab
+Typ: 2-händig
+Mindeststärke: 5
+
+Gewicht: 8
+
+Kann nicht verwendet werden von:
+ Mönch~
 
 //@25	=~<No Text>~
 @26	=~Hellebarde des Wissens~

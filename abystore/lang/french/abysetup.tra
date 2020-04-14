@@ -1,9 +1,12 @@
 @9001 = ~[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
 @9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
 
-@100 = ~Magasin des Curiosites Inhabituelles~
+@100 = ~Magasin des Curiosites inhabituelles~
 @101 = ~Ce mod ne s'installe que sur BG2, ToB, BG2:EE ou EET.~
 
+/* ======= *
+ *  Items  *
+ * ======= */
 //@1	= ~<No Text>~
 @2	= ~Fléau des Orques~
 //@3	= ~<No Text>~
@@ -15,7 +18,18 @@ PARAMÈTRES :
 Capacité d'équipement :
 - Octroie 3 sorts supplémentaires de niveau 6.
 
-Enchantement : +3
+Capacité de combat :
+- Tue automatiquement les orques (sans jet de sauvegarde)
+
+TAC0 : +3
+Dégâts : 1d8 +3
+Type de dégâts : tranchant
+Facteur de vitesse : 3
+Type de compétence : épée longue
+Type : arme à 1 main
+Requiert : 6 en Force
+
+Poids : 3
 
 Utilisable par :
  Mage~
@@ -34,6 +48,8 @@ Capacités d'équipement :
 - Octroie 2 sorts supplémentaires de niveau 5.
 - Octroie 1 sort supplémentaire de niveau 6.
 
+Poids : 15
+
 Utilisable par :
  Clerc~
 
@@ -46,10 +62,20 @@ Ce bouclier est une création du Baron M'Septir. Son armée fut forcée d'affronter
 PARAMÈTRES :
 
 Capacités d'équipement :
-- Classe d'armure : +5
 - Immunité aux sorts de niveau 1
 - Sagesse : +1
-- JS contre les sorts : +3~
+- JS contre les sorts : +3
+
+Classe d'armure : +5
+Poids : 15
+
+Non utilisable par :
+ Barde
+ Druide
+ Mage
+ Voleur
+ Moine
+ Kensai~
 
 //@13	= ~<No Text>~
 @14	= ~Manteau des Dieux~
@@ -66,6 +92,8 @@ Capacités d'équipement :
 - Octroie 2 sorts supplémentaires de niveau 8.
 - Octroie 1 sort supplémentaire de niveau 9.
 
+Poids : 2
+
 Utilisable par :
  Mage~
 
@@ -81,6 +109,8 @@ Capacités d'équipement :
 - +15 Points de vie
 - Régénération : 1 PV toutes les 5 secondes
 
+Poids : 2
+
 Utilisable par :
  Mage~
 
@@ -95,14 +125,22 @@ PARAMÈTRES :
 Capacité d'équipement :
 - Le porteur est sous l'effet d'Action libre
 
-THAC0 : +3
+TAC0 : +3
 Dégâts : 1d8 +3, +5 de feu
-Facteur de vitesse : 7~
+Type de dégâts : contondant
+Facteur de vitesse : 7
+Type de compétence : bâton
+Requiert : 5 en Force
+
+Poids : 8
+
+Non utilisable par :
+ Moine~
 
 //@25	= ~<No Text>~
-@26	= ~La Hallebarde de connaissance +5~
+@26	= ~Hallebarde de connaissance +5~
 //@27	= ~<No Text>~
-@28	= ~La Hallebarde de connaissance +5
+@28	= ~Hallebarde de connaissance +5
 Cette hallebarde incroyablement puissante porte en elle le pouvoir de la connaissance. Quiconque l'utilise comprendra immédiatement comment s'en servir, comme si elle avait des années de pratique. Cette arme confère également des résistances magiques celui/celle qui la manie.
 
 PARAMÈTRES :
@@ -124,6 +162,7 @@ Facteur de vitesse : 4~
 
 
 // WeiDU prompts
+// -------------
 @-1000= "Le mod %TP2_FILE_NAME% contient"
 @-1001= "composants optionnels distincts.
 Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux

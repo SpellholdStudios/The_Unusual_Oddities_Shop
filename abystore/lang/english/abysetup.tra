@@ -1,9 +1,12 @@
 @9001 = ~[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 @9002 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 
-@100 =~Unusual Oddities Shop~
+@100 = ~Unusual Oddities Shop~
 @101 = ~This mod is only compatible with BGII, ToB, BGT, BG2:EE and EET installations.~
 
+/* ======= *
+ *  Items  *
+ * ======= */
 //@1	=~<No Text>~
 @2	=~Orc Render~
 //@3	=~<No Text>~
@@ -11,10 +14,23 @@
 This ancient sword was forged by the elven circle of the Seldarine as part of their war against the infidel orcs. Unfortunately, the sword ended up getting left on the battlefield by an incredibly forgetful elf. Now it belongs to 
 you.
 
-STATISTICS
+STATISTICS:
 
-+3 Enchantment
-Gives +3 bonus 6th level spells.
+Equipped abilities:
+- Memorize 3 extra 6th level spells
+
+Combat abilities:
+- Slays Orcs (no save)
+
+THAC0: +3
+Damage: 1d8+3
+Damage type: slashing
+Speed Factor: 3
+Proficiency Type: Long sword
+Type: One-handed
+Requires: 6 Strength
+
+Weight: 3
 
 Usable by:
  Mage~
@@ -25,12 +41,16 @@ Usable by:
 @8	=~Loren's Chain +5
 This is the traditional garb of a very secretive sect of elven clerics. This particular one was made for their one-time leader, Loren Silverblade. How it was wrested from him has been long lost in time, but the magical abilities that it grants priests are unmatched.
 
-STATISTICS
+STATISTICS:
 
-AC: 0
-+3 Level 4 Spells
-+2 Level 5 Spells
-+1 Level 6 Spell
+Equipped abilities:
+- Memorize 3 extra 4th level spells
+- Memorize 2 extra 5th level spells
+- Memorize 1 extra 6th level spell
+
+Armor Class: 0
+
+Weight: 15
 
 Usable by:
  Cleric (Multi-, Single-, and Dual-Class)~
@@ -41,12 +61,23 @@ Usable by:
 @12	=~Shield of the Lords +4
 This shield was the creation of Baron M'Septir. His army was forced to fight an army of mages in order to save his beloved from her imprisonment. Unfortunately, the Baron had an intense fear of magic. He crafted and wielded this shield in the battle. Needless to say, he won and eventually managed to save the girl.
 
-STATISTICS
+STATISTICS:
 
-AC: 5
-Immunity to Level 1 Spells
-+1 Wisdom
-+3 Save vs. Spells~
+Equipped abilities:
+- Immunity to 1th level Spells
+- +1 Wisdom
+- +3 Save vs. Spells
+
+Armor Class: +5
+Weight: 15
+
+Not usable by:
+ Bard
+ Druid
+ Mage
+ Thief
+ Monk
+ Kensai~
 
 //@13	=~<No Text>~
 @14	=~Cloak of the Gods~
@@ -54,13 +85,16 @@ Immunity to Level 1 Spells
 @16	=~Cloak of the Gods
 There is little known about the history of this item. Judging by its incredible power, however, it is possible that it was a discarded cloak of some minor deity.
 
-STATISTICS
+STATISTICS:
 
-Immunity to Backstab
-+5 Level 6 Spells
-+4 Level 7 Spells
-+3 Level 8 Spells
-+1 Level 9 Spell
+Equipped abilities:
+- Immunity to Backstab
+- Memorize 5 extra 6th level spells
+- Memorize 4 extra 7th level spells
+- Memorize 3 extra 8th level spells
+- Memorize 1 extra 9th level spell
+
+Weight: 2
 
 Usable by:
  Mages (Multi-, Single- and Dual-Class)~
@@ -71,10 +105,12 @@ Usable by:
 @20	=~Minor Mage Gauntlets
 These gauntlets were designed for a mage. It seems like some foolish alchemist designed these. It increases the mage's combat abilities.
 
-STATISTICS
+STATISTICS:
 
 +15 Hit Points
 Regenerate 1 HP every 5 seconds
+
+Weight: 2
 
 Usable by:
  Mages (Multi-, Single-, and Dual-Class)~
@@ -85,13 +121,23 @@ Usable by:
 @24	=~Staff of the Dragon +3
 Velios the Demi-Mage wielded this staff on his quest to recover some powerful artifacts from the plane of fire. His quest failed, and the staff apparently took on some unusual attributes as a result of its entrapment in that plane.
 
-STATISTICS
+STATISTICS:
 
-+3 Bonus to THAC0
-Bestows Free Action upon the wielder
-Damage: 1d8+3
+Equipped abilities:
+- Bestows Free Action upon the wielder
+
+THAC0: +3
+Damage: 1d8+3, +5 Fire
+Damage type: crushing
 Speed Factor: 7
-+5 Fire Damage per hit~
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires: 5 Strength
+
+Weight: 8
+
+Not usable by:
+ Monk~
 
 //@25	=~<No Text>~
 @26	=~The Halberd of Knowing +5~
@@ -99,7 +145,7 @@ Speed Factor: 7
 @28	=~The Halberd of Knowing +5
 This incredibly powerful halberd carries the power of knowledge with it. Any person wielding it will instantly find themselves knowing how, as if they had years of practice. It also bestows some other magical resistances upon its wielder.
 
-STATISTICS
+STATISTICS:
 
 +5 Bonus to THAC0
 Damage: 1d8+5

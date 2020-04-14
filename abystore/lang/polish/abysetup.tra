@@ -1,19 +1,36 @@
-@100 =~Sklep Niezwyk³oœci~
+@100 = ~Sklep Niezwyk³oœci~
 @101 = ~Modyfikacja nie jest dostepny dla twojej gry.~
 
+/* ================= *
+ *  Usability flags  *
+ * ================= */
 @9001 =~[Mo]oze[ %tab%]+[Uu]zywac[ %tab%]*:~
 @9002 =~[Nn]ie[ %tab%]+[Mm]oze[ %tab%]+[Uu]zywac[ %tab%]*:~
 
+/* ======= *
+ *  Items  *
+ * ======= */
 //@1	=~<No Text>~
 @2	=~Karciciel Orków~
 //@3	=~<No Text>~
 @4	=~Karciciel Orków
 Ten pradawny miecz zosta³ wykuty przez sektê wojowniczych elfich kap³anów s³u¿¹cych Seldarine. Ostrze zosta³o nape³nione nienawiœci¹ Corelonna do plugawych orków. Miecz zagin¹ podczas jednej z bitew, teraz nale¿y do ciebie.
 
-STATYSTYKI
+PARAMETRY:
 
-+3 Umagicznienie
 - Dodatkowe 3 czary 6 poziomu
+
+Obrazenia: 1k8 +3
+TraK0: +3
+Typ obrazen: sieczne
+Opóznienie: 3
+Rodzaj bieglosci: miecz dlugi
+Typ broni: 1-reczna
+
+Wymagania:
+– Sila: 6
+
+Waga: 4
 
 Moze uzywac:
  Mag~
@@ -24,12 +41,14 @@ Moze uzywac:
 @8	=~Kolczuga Lorena +5
 Jest to jedna z kolczug jak¹ nosili pradawni elfi kap³ani s³u¿¹cy Seldarine. Ten konkretny egzemplarz nale¿a³ do jednego z przywódców - Lorena Srebrnej Klingi. Zbroja jest ju¿ bardzo stara, ale magia jest w niej ci¹gle obecna.
 
-STATYSTYKI
+PARAMETRY:
 
 KP: 0
 +3 czary 4 poziomu
 +2 czary 5 poziomu
 +1 czary 6 poziomu
+
+Waga: 15
 
 Moze uzywac:
  Kap³an (Dowolna kombinacja)~
@@ -40,7 +59,7 @@ Moze uzywac:
 @12	=~Tarcza Lordów +4
 Tarcza ta nale¿a³a do Barona M'Septira, który wraz ze swoj¹ niedu¿¹ armi¹ stoczy³ epick¹ walkê z Czerwonymi Magami wiê¿¹cymi jej ukochan¹. Walka by³a krwawa ale Lord wraz z grupk¹ ocala³ych uratow¹ sw¹ ukochan¹ i uwolni³ ksiêstwo z jarzma z³ych magów.
 
-STATYSTYKI
+PARAMETRY:
 
 KP: 5
 - Odpornoœæ na czary 1 poziomu
@@ -53,13 +72,15 @@ KP: 5
 @16	=~P³aszcz Bogów
 Historia tego p³aszcza jest praktycznie nieznana, ale s¹dz¹c po jego mocy mo¿na wywnioskowaæ ¿e nale¿a³ on do jakiegoœ mniejszego bóstwa.
 
-STATYSTYKI
+PARAMETRY:
 
 Odpornoœæ na ciosy w plecy
 +5 czarów 6 poziomu
 +4 czarów 7 poziomu
 +3 czarów 8 poziomu
 +1 czarów 9 poziomu
+
+Waga: 2
 
 Moze uzywac:
  Mag (dowolna kombinacja)~
@@ -70,10 +91,12 @@ Moze uzywac:
 @20	=~Pomniejsze Bransolety Maga
 Takie Bransolety s¹ wykonywane przez czeladników na koniec nauki u alchemika.
 
-STATYSTYKI
+PARAMETRY:
 
 +15 P¯
 Regeneruje 1 P¯ co 5 sekund
+
+Waga: 2
 
 Moze uzywac:
  Mag (Wszystkie mo¿liwoœci)~
@@ -84,12 +107,22 @@ Moze uzywac:
 @24	=~Kostur Smoka +3
 Velios, Demi-Mag podj¹³ siê próby odzyskania kilku artefaktów z Planu Ognia. Misja zakoñczy³a siê klêsk¹ a jego kostur nabra³ ciekawych zdolnoœci.
 
-STATYSTYKI
+PARAMETRY:
 
 Premia +3 do THAC0
 Swoboda Dzia³ania
 Obra¿enia: 1k8+3 +5 od ognia
-OpóŸnienie: 7~
+Typ obrazen: obuchowe
+OpóŸnienie: 7
+Rodzaj bieglosci: kij
+Typ broni: 2-reczna
+Wymagania:
+– Sila: 5
+
+Waga: 8
+
+Nie Moze uzywac:
+ Mnich~
 
 //@25	=~<No Text>~
 @26	=~Halabarda Perfekcji +5~
@@ -97,7 +130,7 @@ OpóŸnienie: 7~
 @28	=~Halabarda Perfekcji +5
 Ta oto potê¿na broñ posiada specyficzny typ samoœwiadomoœci. Ka¿dy kto j¹ dzier¿y staje siê mistrzem w jej w³adaniu. Broñ prowadzi go tak by zabi³.
 
-STATYSTYKI
+PARAMETRY:
 
 Premia +5 do THAC0
 Obra¿enia: 1k8+5 +2 od kwasu i ch³odu
@@ -113,6 +146,7 @@ Mistrz we w³adaniu Halabard¹
 
 
 // WeiDU prompts
+// -------------
 @-1000 = ~Mod %TP2_FILE_NAME% posiada~
 @-1001 = ~opcjonalnych komponentow.
 ~
@@ -131,7 +165,7 @@ Mistrz we w³adaniu Halabard¹
 [R] ponowna instalacja, [N] pozostaw bez zmian, [U] odinstaluj, [Q] zakoncz
 ~
 @-1008 = ~]?
-[I] tak, [N] nie, [Q] zakoncz
+[Y] tak, [N] nie, [Q] zakoncz
 ~
 
 @-1009 = ~Wprowadz fragment nazwy modulu: ~

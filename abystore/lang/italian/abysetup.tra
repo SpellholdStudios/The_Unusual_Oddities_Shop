@@ -1,9 +1,15 @@
 @100 =~Negozio delle Insolite Stranezze~
 @101 =~Questo componente non e disponibile per il tuo gioco.~
 
+/* ================= *
+ *  Usability flags  *
+ * ================= */
 @9001 =~[Uu]tilizzabile[ %tab%]+[Da]a[ %tab%]*:~
 @9002 =~[Nn]on[ %tab%]+[Uu]tilizzabile[ %tab%]+[Da]a[ %tab%]*:~
 
+/* ======= *
+ *  Items  *
+ * ======= */
 //@1	=~<No Text>~
 @2	=~Piaga dell'Orco~
 //@3	=~<No Text>~
@@ -12,11 +18,24 @@ Questa vecchia spada fu forgiata dalla cerchia elfica dei seldarine come aiuto d
 
 STATISTICHE
 
-+3 Incantamento
-+3 Incantesimi di 6° livello.
+Abilità di Equipaggiamento:
+- +3 Incantesimi di 6° livello.
+
+Abilità di Combattimento:
+- Uccide gli Orco (senza tiro salvezza)
+
+THACO: +3
+Danno: 1D8 +3
+Tipo di danno: tagliente
+Fattore-velocità: 3
+Tipo di competenza: Spada Lunga
+Tipo: A una mano
+Richiede: 8 alla Forza
+
+Peso: 3
 
 Utilizzabile da:
-Mago~
+ Mago~
 
 //@5	=~<No Text>~
 @6	=~Cotta di maglia di Loren +5~
@@ -31,8 +50,10 @@ CA: 0
 +2 Incantesimi di 5° Livello
 +1 Incantesimo di 6° Livello
 
+Peso: 15
+
 Utilizzabile da:
-Chierico (Multi-, Singolo-, e Dual-Classe)~
+ Chierico (Multi-, Singolo-, e Dual-Classe)~
 
 //@9	=~<No Text>~
 @10	=~Scudo dei Lord +4~
@@ -45,7 +66,17 @@ STATISTICHE
 CA: 5
 Immunità agli Incantesimi di 1° livello
 +1 Saggezza
-+3 Tiri Salvezza contro Magie~
++3 Tiri Salvezza contro Magie
+
+Peso: 15
+
+Non utilizzabile da:
+ Bardo
+ Druido
+ Mago
+ Ladro
+ Monaco
+ Kensai~
 
 //@13	=~<No Text>~
 @14	=~Mantello degli Dei~
@@ -61,8 +92,10 @@ Immunità al Colpo alle Spalle
 +3 Incantesimi di 8 Livello
 +1 Incantesimo di 9 Livello
 
+Peso: 2
+
 Utilizzabile da:
-Mago (Multi-, Singolo- e Dual-Classe)~
+ Mago (Multi-, Singolo- e Dual-Classe)~
 
 //@17	=~<No Text>~
 @18	=~Bracciali Minori del Mago~
@@ -75,8 +108,10 @@ STATISTICHE
 + 15 Punti Ferita
 Rigenera 1 PF ogni 5 secondi
 
+Peso: 2
+
 Utilizzabile da:
-Mago (Multi-, Singolo-, e Dual-Classe)~
+ Mago (Multi-, Singolo-, e Dual-Classe)~
 
 //@21	=~<No Text>~
 @22	=~Bastone del Drago +3~
@@ -89,8 +124,17 @@ STATISTICHE
 +3 Bonus al THAC0
 Conferisce Liberta d'Azione al possessore
 Danno: 1d8+3
-Fattore Velocità: 7
-+5 danno da fuoco per colpo~
++5 danno da fuoco per colpo
+Tipo di danno: schiacciamento
+Fattore-velocità: 7
+Tipo di competenza: Bastone Rinforzato
+Tipo: A due mani
+Richiede: 5 alla Forza
+
+Peso: 8
+
+Non utilizzabile da:
+ Monaco~
 
 //@25	=~<No Text>~
 @26	=~L'Alabarda della Conoscenza +5~
@@ -114,3 +158,79 @@ Fissa l'abilità con l'Alabarda al livello Maestro
 @30	=~Abysima~
 
 @31	=~Il Magnifico Negozio delle Stranezze~
+
+
+// WeiDU prompts
+// -------------
+@-1000= "Il mod %TP2_FILE_NAME% ha"
+@-1001= "diversi componenti opzionali.\nPer far prima, si può scegliere di applicare una medesima azione a tutti i componenti piuttosto che trattarli singolarmente..\n"
+@-1002= "Che cosa vuoi fare con quei componenti NON ANCORA installati?\n[I] Installarli,  [S] Saltarli, [A] Trattarli singolarmente?"
+@-1003= "Che cosa vuoi fare con quei componenti GIÀ installati?\n[R] Reinstallarli, [U] Rimuoverli, [S] Saltarli, [A] Trattarli singolarmente? "
+
+@-1004= "Fai una copia di backup del file:"
+@-1005= "e cerca aiuto qui:"
+
+@-1006= "Installazione del componente ["
+@-1007= "]?\n[R] Reinstallazione, [N] Nessun cambiamento,  [U] Rimozione o [Q] Termine del processo di installazione? "
+@-1008= "]?\n[I] Installazione, [N] Nessun cambiamento o [Q] Termine del processo di installazione? "
+
+@-1009= "Inserisci part del nome del modulo: "
+
+@-1010= "Reinstallazione del componente ["
+@-1011= "] in corso ..."
+@-1012= "Reinstallazione in Lingua"
+
+@-1013= "Rimozione della precedente installazione di ["
+@-1014= "] in corso ..."
+@-1015= "PRECEDENTE INSTALLAZIONE ELIMINATA"
+
+@-1016= "Installazione in corso"
+@-1017= "ERRORE durante l'installazione di ["
+@-1018= "], ritorno allo stato precedente"
+@-1019= "INSTALLAZIONE COMPLETATA CON SUCCESSO     "
+@-1020= "Salto"
+@-1021= "Rimuovo ["
+@-1022= "] (componente #"
+@-1023= ")"
+@-1024= "RIMOZIONE RIUSCITA ["
+
+@-1025= "]?\n[R] Reinstallazione, [N] Nessun cambiamento, [U] Rimozione, [Q] Termine del processo di installazione o selezionare una delle seguenti opzioni:"
+@-1026= "]?\n[N] No, [Q] Termine del processo di installazione o selezionare una delle seguenti opzioni:"
+@-1027= " (selezione corrente="
+
+@-1028= "Vuoi trattare i componenti di ["
+@-1029= "]?\n[Y] Si, [N] No? "
+
+@-1030= "]?\nSeleziona una delle seguenti opzioni:"
+@-1031= "]?\n[R] Reinstallazione, [N] Nessun cambiamento,  [Q] Termine del processo di installazione o selezionare una delle seguenti opzioni:"
+@-1032= "INSTALLAZIONE NON EFFETTUATA A CAUSA DI ERRORI"
+@-1033= "INSTALLAZIONE COMPLETATA MA CON AVVERTIMENTI    "
+@-1034= "vuoi vedere il file leggimi? [Y] Si, [N] No"
+@-1035= "in Lingua"
+
+@-1036= "Salto il GRUPPO ["
+@-1037= "] perchè non conforme ai requisiti richiesti."
+
+@-1038= "[A] Trattare singoli componenti, [S] Saltare tutto, o scegliere una alternativa predefinita:"
+@-1039= "[A] Trattare singoli componenti, [R] Reinstallare la configurazione corrente, [U] Rimuovere tutto, [S] Saltare tutto, o scegliere una alternativa predefinita:"
+
+@-1040= "\nScegli la lingua in cui giocare.\nSe vorrai giocare successivamente in un'altra lingua dovrai modificare il file weidu.conf e reinstallare le modifiche selezionate.\n"
+@-1041= "Cecoslovacco"
+@-1042= "Tedesco"
+@-1043= "Inglese"
+@-1044= "Spagnolo"
+@-1045= "Francese"
+@-1046= "Italiano"
+@-1047= "Polacco"
+@-1048= "Portoghese"
+@-1049= "Turco"
+@-1050= "Giapponese"
+@-1051= "Coreano"
+@-1052= "Cinese"
+@-1053= "Russo"
+@-1054= "Ucraino"
+
+@-1060= "\nQuesto gioco è disponibile in diverse Lingue, ma WeiDU non sa quale Lingua è stata scelta quando questa modifica è stata installata.\n\nIndica quale Lingua era in uso al momento dell'installazione di questa modifica. La tua scelta rimarrà valida fintanto che WeiDU è attivo ma non può essere salvata permanentemente.\n"
+@-1061= "\nSto usando"
+@-1062= " e "
+
