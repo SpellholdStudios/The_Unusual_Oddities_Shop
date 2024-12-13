@@ -31,7 +31,7 @@ ALWAYS
 	 *    No exception, everything needs to be converted                                              *
 	 * -----------------------------------------------------------------------*---------------------- */
 	ACTION_DEFINE_ARRAY r#_reload BEGIN abysetup END
-	ACTION_DEFINE_ARRAY r#_noconvert BEGIN setup-win32 setup-unix setup-osx END
+	ACTION_DEFINE_ARRAY r#_noconvert BEGIN install END
 		LAF HANDLE_CHARSETS
 		INT_VAR
 		infer_charset = 1
@@ -72,7 +72,7 @@ LANGUAGE ~Deutsch (Uebersetzung von the BiG World Textpack German team)~
 
 LANGUAGE ~Simplified Chinese~
 		 ~schinese~
-		 ~abystore/lang/schinese/setup-%WEIDU_OS%.tra~
+		 ~abystore/lang/schinese/install.tra~
 
 /* ========================================== *
  *         The Unusual Oddities Shop          *
